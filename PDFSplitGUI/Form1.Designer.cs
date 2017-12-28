@@ -1,4 +1,4 @@
-﻿namespace PDFSplitGUI {
+﻿namespace PDFSplitComplete {
     partial class Form1 {
         /// <summary>
         /// Required designer variable.
@@ -43,6 +43,8 @@
             this.cbAdv = new System.Windows.Forms.CheckBox();
             this.lblStatus = new System.Windows.Forms.Label();
             this.btnViewOut = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblOutPath = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnLoad
@@ -58,10 +60,10 @@
             // lblSourcePath
             // 
             this.lblSourcePath.AutoSize = true;
-            this.lblSourcePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSourcePath.Location = new System.Drawing.Point(117, 18);
+            this.lblSourcePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSourcePath.Location = new System.Drawing.Point(117, 23);
             this.lblSourcePath.Name = "lblSourcePath";
-            this.lblSourcePath.Size = new System.Drawing.Size(160, 24);
+            this.lblSourcePath.Size = new System.Drawing.Size(104, 15);
             this.lblSourcePath.TabIndex = 1;
             this.lblSourcePath.Text = "Load Source PDF";
             // 
@@ -73,7 +75,6 @@
             this.cboStart.Size = new System.Drawing.Size(59, 21);
             this.cboStart.TabIndex = 2;
             this.cboStart.SelectedIndexChanged += new System.EventHandler(this.cboStart_SelectedIndexChanged);
-            this.cboStart.TextUpdate += new System.EventHandler(this.cboStart_TextUpdate);
             // 
             // btnViewPDF
             // 
@@ -103,7 +104,6 @@
             this.cboEndA.Name = "cboEndA";
             this.cboEndA.Size = new System.Drawing.Size(59, 21);
             this.cboEndA.TabIndex = 6;
-            this.cboEndA.SelectedIndexChanged += new System.EventHandler(this.cboEndA_SelectedIndexChanged);
             // 
             // cboStartA
             // 
@@ -194,7 +194,7 @@
             // 
             // btnGO
             // 
-            this.btnGO.Location = new System.Drawing.Point(13, 178);
+            this.btnGO.Location = new System.Drawing.Point(13, 197);
             this.btnGO.Name = "btnGO";
             this.btnGO.Size = new System.Drawing.Size(75, 23);
             this.btnGO.TabIndex = 15;
@@ -214,7 +214,6 @@
             this.cbAdv.TabIndex = 16;
             this.cbAdv.Text = "Add Advancment Statement?";
             this.cbAdv.UseVisualStyleBackColor = true;
-            this.cbAdv.CheckedChanged += new System.EventHandler(this.cbAdv_CheckedChanged);
             // 
             // lblStatus
             // 
@@ -226,7 +225,7 @@
             // 
             // btnViewOut
             // 
-            this.btnViewOut.Location = new System.Drawing.Point(121, 178);
+            this.btnViewOut.Location = new System.Drawing.Point(121, 197);
             this.btnViewOut.Name = "btnViewOut";
             this.btnViewOut.Size = new System.Drawing.Size(75, 23);
             this.btnViewOut.TabIndex = 18;
@@ -235,11 +234,32 @@
             this.btnViewOut.Visible = false;
             this.btnViewOut.Click += new System.EventHandler(this.btnViewOut_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 168);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Output";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblOutPath
+            // 
+            this.lblOutPath.AutoSize = true;
+            this.lblOutPath.Location = new System.Drawing.Point(118, 173);
+            this.lblOutPath.Name = "lblOutPath";
+            this.lblOutPath.Size = new System.Drawing.Size(35, 13);
+            this.lblOutPath.TabIndex = 20;
+            this.lblOutPath.Text = "label5";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 252);
+            this.ClientSize = new System.Drawing.Size(780, 252);
+            this.Controls.Add(this.lblOutPath);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnViewOut);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.cbAdv);
@@ -261,7 +281,7 @@
             this.Controls.Add(this.btnLoad);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "PDFSplitterGUI";
+            this.Text = "PDFSplitComplete";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,6 +308,8 @@
         private System.Windows.Forms.CheckBox cbAdv;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Button btnViewOut;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblOutPath;
     }
 }
 

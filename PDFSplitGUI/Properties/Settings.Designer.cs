@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PDFSplitGUI.Properties {
+namespace PDFSplitComplete.Properties {
 
 
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
