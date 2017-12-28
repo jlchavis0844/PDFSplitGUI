@@ -7,8 +7,8 @@
     <ProjectGuid>{18140158-4426-465E-89B8-DBFD48E70BDE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PDFSplitGUI</RootNamespace>
-    <AssemblyName>PDFSplitGUI</AssemblyName>
+    <RootNamespace>PDFSplitComplete</RootNamespace>
+    <AssemblyName>LSW Annuity PDF Splitter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -98,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

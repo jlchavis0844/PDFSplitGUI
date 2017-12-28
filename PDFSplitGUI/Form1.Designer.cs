@@ -281,7 +281,7 @@
             this.Controls.Add(this.btnLoad);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "PDFSplitComplete";
+            this.Text = "LSW Annuity PDF Splitter";
             this.ResumeLayout(false);
             this.PerformLayout();
 
